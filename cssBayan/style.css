@@ -1,3 +1,39 @@
 .header__title{
   font-size: 60px;
 }
+
+.bayan{
+  display: flex;
+  flex-direction: column;
+}
+
+.bayan__mem{
+  border: 1px solid red;
+}
+
+
+.bayan__btn{
+  appearance: none;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 3px solid green;
+  
+}
+
+.bayan__btn:checked{
+  background-color: black;
+}
+
+.bayan__mem-caption{
+  color: blue;
+}
+
+
+.bayan__mem-image {
+  display: none;
+}
+
+.bayan__btn:checked + .bayan__mem-image{
+  display: block;;
+}
