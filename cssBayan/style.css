@@ -1,39 +1,81 @@
-.header__title{
-  font-size: 60px;
+.page {
+  min-height: 100vh;
+  background-color: lightgray;
+  margin: auto;
 }
 
-.bayan{
+.header__title {
+  font-size: 2rem;
+}
+
+.bayan {
   display: flex;
   flex-direction: column;
+  background-color: lightgray;
 }
 
-.bayan__mem{
-  border: 1px solid red;
+.bayan__mem {
+  border-top: 2px solid black;
+  overflow: hidden;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  user-select: none;
 }
 
 
-.bayan__btn{
+.bayan__btn {
+  order: 1;
   appearance: none;
-  display: block;
-  width: 30px;
-  height: 30px;
-  border: 3px solid green;
-  
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../cssBayan/icons/eye-solid.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+  opacity: 0.7;
 }
 
-.bayan__btn:checked{
-  background-color: black;
+.bayan__btn:checked {
+  background-image: url(../cssBayan/icons/check-solid.svg);
+  transition: 1s;
 }
 
-.bayan__mem-caption{
-  color: blue;
+.bayan__mem-caption {
+  order: 0;
+  width: calc(100% - 3rem);
+  box-sizing: border-box;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem;
+  margin: 0;
+  opacity: 0.7;
+  transition: 0.5s;
 }
 
+.bayan__btn:checked~.bayan__mem-caption {
+  opacity: 1;
+  transition: 0.5s;
+}
 
 .bayan__mem-image {
-  display: none;
+  order: 2;
+  box-sizing: border-box;
+  max-width: 90vw;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  width: 0;
+  opacity: 0;
+  transition: width 1s, opacity 1s;
 }
 
-.bayan__btn:checked + .bayan__mem-image{
-  display: block;;
+.bayan__btn:checked~.bayan__mem-image {
+  width: 100%;
+  opacity: 1;
+  transition: width 2s, opacity 1s;
 }
