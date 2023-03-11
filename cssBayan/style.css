@@ -2,6 +2,7 @@
   min-height: 100vh;
   background-color: lightgray;
   margin: auto;
+  padding-bottom: 16rem;
 }
 
 .header__title {
@@ -15,7 +16,7 @@
 }
 
 .bayan__mem {
-  border-top: 2px solid black;
+  border-top: medium solid black;
   overflow: hidden;
   padding: 0.5rem 0.5rem;
   display: flex;
@@ -65,7 +66,7 @@
   box-sizing: border-box;
   max-width: 90vw;
   margin: auto;
-  border: 2px solid black;
+  border: thin solid black;
   border-radius: 0.5rem;
   overflow: hidden;
 
@@ -104,7 +105,7 @@
 
   .page {
     width: 90%;
-    max-width: 1200px;
+    max-width: 80rem;
     margin: auto;
   }
 
