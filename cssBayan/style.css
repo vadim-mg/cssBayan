@@ -113,14 +113,16 @@
     font-size: 2rem;
   }
 
-  .bayan__mem-caption:hover {
-    opacity: 1;
-    transition: 0.5s;
-  }
-
   .bayan__btn {
     top: 1rem;
     right: 1rem;
+  }
+}
+
+@media (hover: hover) {
+  .bayan__mem-caption:hover {
+    opacity: 1;
+    transition: 0.5s;
   }
 
   .bayan__btn:hover {
