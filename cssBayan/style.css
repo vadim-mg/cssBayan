@@ -79,3 +79,75 @@
   opacity: 1;
   transition: width 2s, opacity 1s;
 }
+
+
+
+@media screen and (min-width: 760px) {
+  .header__title {
+    font-size: 2.5rem;
+  }
+
+  .bayan__mem-image {
+    max-width: 50%;
+  }
+
+  .bayan__mem-caption {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media screen and (min-device-width: 1280px) {
+  .header__title {
+    font-size: 3rem;
+  }
+
+  .page {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .bayan__mem-caption {
+    font-size: 2rem;
+  }
+
+  .bayan__mem-caption:hover {
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .bayan__btn {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .bayan__btn:hover {
+    width: 2.1rem;
+    height: 2.1rem;
+    transform: translateX(0.05rem);
+    transform: translatey(0.05rem);
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .bayan__mem:hover>.bayan__btn:not(checked)~.bayan__mem-image {
+    width: 100%;
+    opacity: 1;
+    transition: width 2s, opacity 1s;
+  }
+
+  .bayan__mem:hover:has(.bayan__btn:checked),
+  .bayan__btn:checked:hover {
+    cursor: default;
+  }
+
+  .bayan__mem:hover,
+  .bayan__btn:not(checked):hover {
+    cursor: pointer;
+  }
+
+  .bayan__mem:hover:not(:has(.bayan__btn:checked)) {
+    background-color: rgb(175, 175, 175)
+  }
+}
